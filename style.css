@@ -10,6 +10,10 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #9F9F9F;
 }
+main{
+    display: flex;
+    justify-content: center;
+}
 .header{
     background-color: #562EFF;
     display: flex;
@@ -44,14 +48,13 @@ nav li a{
 /*header style end*/
 /*-------main section style start---------*/
 .container{
-  display: flex;
-  justify-content: center;
-}
-.top-players{
-        background: white;
+    background: white;
         width: 870px;
-
 }
+.top-blogs{
+    margin-bottom: 50px;
+}
+
 .section-title{
     color: #562EFF;
     padding-left: 30px;
@@ -86,4 +89,26 @@ nav li a{
 }
 hr{
     border: 1px solid #D1D1D1;
+}
+
+/*top-blogs style*/
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+}
+.blog{
+    display: flex;
+    padding-left: 30px;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-info p a{
+    text-decoration: none;
 }
